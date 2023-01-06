@@ -1,0 +1,58 @@
+﻿<Page x:Class="FiszkiAppVisualLayer.GamePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FiszkiAppVisualLayer"
+      mc:Ignorable="d"
+      Loaded="GamePage_Loaded"
+      Name="GameWindow"
+      Title="GamePage" Height="458" Width="1000">
+    
+    <Grid  >
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF8633B4" Offset="0.725"/>
+                <GradientStop Color="#FFB79CC5" Offset="0.391"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+
+        <Label Name="Label_points" Width="200" Height="50"
+               HorizontalAlignment="Right" Margin="0,1,2,0"
+               VerticalAlignment="Top" BorderBrush="#FF531E54" BorderThickness="4"
+               FontWeight="Bold" FontSize="30" Background="FloralWhite"  HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" FontFamily="Berlin Sans FB">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect> Points
+        </Label>
+        <TextBox x:Name="Timer" Width="200" Height="50" Margin="0,0,0,0" Text="Timer" BorderThickness="4"
+                BorderBrush="#FF531E54" FontSize="30" HorizontalContentAlignment="Center" FontWeight="Bold"
+                Background="FloralWhite" VerticalAlignment="Top" Opacity="0.9" FontFamily="Berlin Sans FB" 
+            ></TextBox>
+        <Button x:Name="BW1" Content="Word" Width="200" Height="50" HorizontalAlignment="Left"
+                Margin="100,200,0,0" FontWeight="Bold" FontSize="32" BorderBrush="#FF531E54"
+                BorderThickness="4" Background="FloralWhite" Click="LeftAnswerButton_Click" FontFamily="Berlin Sans FB"></Button>
+        <Button x:Name="BW2" Content="Word" Width="200" Height="50" HorizontalAlignment="Left"
+                Margin="400,200,0,0" FontWeight="Bold" FontSize="32" BorderBrush="#FF531E54"
+                BorderThickness="4" Background="FloralWhite" Click="MidAnswerButton_Click" FontFamily="Berlin Sans FB"></Button>
+        <Button x:Name="BW3" Content="Word" Width="200" Height="50" HorizontalAlignment="Left"
+                Margin="700,304,0,104" FontWeight="Bold" FontSize="32" BorderBrush="#FF531E54"
+                BorderThickness="4" Click="RightAnswerButton_Click" Background="White" FontFamily="Berlin Sans FB Demi"/>
+        <Button x:Name="Start" Width="100" Height="50" Margin="400,109,500,299" Content="Start" BorderThickness="4,4,0,4"
+                BorderBrush="#FF531E54" FontSize="30" HorizontalContentAlignment="Center" FontWeight="Bold"
+                Background="FloralWhite" VerticalContentAlignment="Center" Opacity="0.9"  FontFamily="Berlin Sans FB" Click="Start_Click"
+            ></Button>
+        <Button x:Name="Result" Width="100" Height="50" Margin="500,109,400,299" Content="End" BorderThickness="4"
+                BorderBrush="#FF531E54" FontSize="30" HorizontalContentAlignment="Center" FontWeight="Bold"
+                Background="FloralWhite" VerticalContentAlignment="Center"  FontFamily="Berlin Sans FB" Click="Result_Click"
+            ></Button>
+        <Label Name="Meaning" Content="Meaning" Width="200" Height="50" Margin="0,0,0,10" 
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30"
+               FontWeight="Bold" Background="GhostWhite" BorderBrush="#FF531E54"
+               BorderThickness="4" FontFamily="Berlin Sans FB">
+        </Label>
+
+
+    </Grid>
+</Page>
