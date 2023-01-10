@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Navigation;
@@ -38,6 +40,7 @@ namespace FiszkiAppVisualLayer
 			}, Application.Current.Dispatcher);
 			_timer.Start();
 			#endregion
+
 		}
 
 		#region STUFF_NEDEED_TO_LISTEN_CLICKS
@@ -178,6 +181,7 @@ namespace FiszkiAppVisualLayer
 				ChangePossibilityOfClicking();
 			}
 			DefaultButtonColor();
+
 		}
 
 		private void Result_Click(object sender, RoutedEventArgs e)
@@ -188,7 +192,7 @@ namespace FiszkiAppVisualLayer
 		#endregion
 
 		/// <summary>
-		/// Method that populating summeay list
+		/// Method that populating summary list
 		/// </summary>
 		private void FillSummaryList() 
 		{

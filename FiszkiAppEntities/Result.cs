@@ -11,7 +11,7 @@ namespace FiszkiAppEntities
 	/// </summary>
 	public class Result
 	{
-		string _meaning;
+		private string _meaning;
 		string _answer;
 		DateTime _time;
 		int _point;

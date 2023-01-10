@@ -28,12 +28,9 @@
             </TextBox.Effect>
         </TextBox>
 
-        <TextBox Name="Rules" Width="800" Height="100" HorizontalAlignment="Right" Text="A,S,D - answer clicks  SPACE - draw another word
-                 OTHER KEYS - result page"
-                   Background="FloralWhite" FontSize="30" FontWeight="Bold" TextAlignment="Justify" Margin="0,302,20,48" BorderBrush="#FF6C3474" BorderThickness="4" FontFamily="Berlin Sans FB" TextWrapping="Wrap">
-            <TextBox.Effect>
-                <DropShadowEffect/>
-            </TextBox.Effect>
-        </TextBox>
+        <Label Name="Rules" Width="800" Height="100" HorizontalAlignment="Right" Content="A,S,D - answer clicks  SPACE - draw another word  OTHER KEYS - result page" VerticalContentAlignment="Center" 
+                   Background="FloralWhite" FontSize="20" FontWeight="Bold" Margin="0,302,20,48" BorderBrush="#FF6C3474" BorderThickness="4" FontFamily="Berlin Sans FB" >
+
+        </Label>
     </Grid>
 </Page>
